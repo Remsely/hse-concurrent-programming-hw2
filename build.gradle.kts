@@ -2,6 +2,12 @@ plugins {
     id("java")
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
 group = "edu.hse.concurrency.pool"
 version = "1.0-SNAPSHOT"
 
